@@ -31,8 +31,8 @@ frankfurter API: Used for real-time fiat currency exchange rates.
 slingacademy API: Used to fetch random photos.
 
 
-deployed on netlify.
-[click here](https://vite-react-basic.netlify.app/)
+Deployed on netlify.
+[click here to visit](https://vite-react-basic.netlify.app/)
 
 <!-- This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
