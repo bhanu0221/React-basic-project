@@ -1,0 +1,94 @@
+/* CurrencyConverter.css */
+.full {
+  display: flex;
+  justify-content: space-between; /* pushes divs to extreme left and right */
+  align-items: flex-start;        /* aligns at top */
+  padding: 50px;                  /* spacing inside parent */
+  background-color: #1a1818;
+  flex-wrap: wrap; 
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px 0px 100px 270px; /* ⬅ increased top margin */
+  text-align: center;
+  padding: 50px;
+  box-shadow: 0px 0px 40px 0px rgb(82, 88, 176);
+  background-color: #1f8fb456;
+  border-radius: 12px;
+  
+  
+}
+h2 {
+   color: aquamarine;
+   font-style: italic;
+}
+h3 {
+    color: aliceblue;
+}
+.input {
+  width: 100px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.select {
+  padding: 5px;
+}
+
+.to-text {
+  margin: 0 10px;
+  color: wheat;
+}
+
+/* ================= TABLET SCREENS ================= */
+@media (max-width: 992px) {
+  .full {
+    padding: 30px;
+    justify-content: center; /* center items on medium screens */
+    gap: 30px;
+  }
+
+  .container {
+    margin: 50px auto;
+    padding: 40px;
+  }
+}
+
+/* ================= PHONES ================= */
+@media (max-width: 768px) {
+  .full {
+    align-items: center;
+    padding: 40px;
+  }
+
+  .container {
+    max-width: 90%;  /* use most of the screen width */
+    box-shadow: 0px 0px 40px 0px rgb(82, 88, 176);
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .input {
+    width: 80px;
+    margin: 10px;
+    
+  }
+
+  .select {
+    width: 100px;
+  }
+
+  .to-text {
+    display: block; /* stack 'to' text below on very small screens */
+    margin: 10px 0;
+  }
+}
+

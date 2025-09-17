@@ -1,0 +1,100 @@
+#container {  
+  max-width: 400px;
+  margin: 0px 210px 0px 0px ; /* top right bottom left */
+  text-align: center;
+  padding: 20px;
+  font-family: Arial; 
+  border-radius: 12px;
+  box-shadow: 0px 0px 40px 0px rgb(82, 88, 176);
+  background-color: #1f8fb456;
+}
+
+
+.crypto {
+  color: rgb(76, 169, 107);
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.tb {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: white;
+}
+
+th {
+  background-color: #4cafef;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#info img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f144;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Optional: Styling for loading or error messages */
+td[colspan] {
+  text-align: center;
+  color: #888;
+}
+/* =============== TABLETS =============== */
+@media (max-width: 768px) {
+  #container {
+    max-width: 90%;
+    padding: 16px;
+    margin: 20px auto;
+  }
+
+  .crypto {
+    font-size: 24px;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* =============== PHONES =============== */
+@media (max-width: 480px) {
+  #container {
+    max-width: 95%;
+    padding: 12px;
+    box-shadow: 0px 0px 40px 0px rgb(82, 88, 176);
+  }
+
+  .crypto {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  /* Make table scrollable horizontally on very small screens */
+  .tb {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}

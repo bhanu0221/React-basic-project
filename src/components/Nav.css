@@ -1,0 +1,58 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color:rgb(41, 41, 42);
+}
+
+.name {
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(173, 172, 238);
+  font-style: normal;
+}
+
+.link {
+  display: flex;
+  gap: 20px; /* spacing between links */
+}
+
+.link a {
+  color: rgb(173, 172, 238);
+  text-decoration: none;
+  font-size: x-large;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #00bcd4; /* hover effect */
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    flex-direction: column; /* stack items vertically */
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  .name {
+    font-size: medium; /* slightly smaller for phones */
+    margin-bottom: 10px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    color: bisque;
+  
+  }
+
+  .link {
+    width: 100%;
+    justify-content: space-around; /* spread links evenly */
+    gap: 10px;
+    flex-wrap: wrap; /* allow links to wrap */
+  }
+
+  .link a {
+    font-size: large; /* smaller font on phones */
+  }
+}
