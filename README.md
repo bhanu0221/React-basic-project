@@ -14,6 +14,8 @@ Responsive Design: The app is optimized for a seamless experience on both deskto
 
 Fast Development: Built with Vite for an incredibly fast and lightweight development environment.
 
+---
+
 
 🛠️Technologies Used.
 React: A JavaScript library for building user interfaces.
