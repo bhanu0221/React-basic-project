@@ -1,7 +1,8 @@
 # React + Vite Based basic project.
 Currency Converter & Crypto price rate real-time updates.
 
-
+Deployed on netlify.
+👉[click here to visit](https://vite-react-basic.netlify.app/)
 
 ✨ Features.
 Real-Time Currency Conversion: Get up-to-the-minute exchange rates for various fiat currencies.
@@ -29,10 +30,6 @@ CoinGecko API: Used to fetch the latest cryptocurrency prices.
 frankfurter API: Used for real-time fiat currency exchange rates.
 
 slingacademy API: Used to fetch random photos.
-
-
-Deployed on netlify.
-[click here to visit](https://vite-react-basic.netlify.app/)
 
 <!-- This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
