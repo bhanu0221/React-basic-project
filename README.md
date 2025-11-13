@@ -1,7 +1,7 @@
 # React + Vite Based basic project.
 Currency Converter & Crypto price rate real-time updates.
 
-Deployed on netlify.
+**Deployed on netlify.**
 👉[click here to visit](https://vite-react-basic.netlify.app/)
 
 ✨ Features.
