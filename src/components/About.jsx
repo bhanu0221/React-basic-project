@@ -13,13 +13,8 @@ function About() {
                         <br />
                         The technology that I used: React+Vite, basic HTML, CSS and JavaScript with some Public APIs.
                     </p>
-
-                    <div className="profile">
-                        <img src="/anup.jpg" alt="Anup Shahi" />
-                        <h3>I'm Anup Shahi</h3>
-                        <p>aspiring for Web Developer or software dev. also learning React and other technology to build my logical skill.</p>
-                    </div>
                 </div>
+                
                 <footer style={{
                     textAlign: "center",
                     padding: "16px 0",

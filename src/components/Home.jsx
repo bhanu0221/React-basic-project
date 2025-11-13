@@ -3,6 +3,8 @@ import "./home.css";
 import Cry from "./cry";
 
 function CurrencyConverter() {
+
+
   const [amount, setAmount] = useState(1);
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("INR");
@@ -12,12 +14,10 @@ function CurrencyConverter() {
   // Fetch exchange rate when currencies change
   useEffect(() => {
     const fetchRate = async () => {
-      try {
-        const res = await fetch(
-          `https://api.frankfurter.app/latest?from=${fromCurrency}&to=${toCurrency}`
-        );
-        if (!res.ok) throw new Error("Network response was not ok");
 
+      const url = `https://api.frankfurter.app/latest?from=${fromCurrency}&to=${toCurrency}`;
+      try {
+        const res = await fetch(url);
         const data = await res.json();
         if (data.rates && data.rates[toCurrency]) {
           setRate(data.rates[toCurrency]);
@@ -44,34 +44,47 @@ function CurrencyConverter() {
         <div className="container">
           <h2>💱 Currency Converter</h2>
           <div>
-            <input
-              type="number"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
+            <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}
               className="input"
               placeholder="Enter Amount"
             />
-            <select
-              value={fromCurrency}
-              onChange={(e) => setFromCurrency(e.target.value)}
+            <select value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)}
               className="select"
             >
               <option>USD</option>
               <option>INR</option>
               <option>EUR</option>
-              <option>GBP</option>
+              <option>GBP</option>  
+              <option>JPY</option>  {/* Japanese Yen */}
+              <option>AUD</option>  {/* Australian Dollar */}
+              <option>CAD</option>  {/* Canadian Dollar */}
+              <option>CHF</option>  {/* Swiss Franc */}
+              <option>CNY</option>  {/* Chinese Yuan */}
+              <option>NZD</option>  {/* New Zealand Dollar */}
+              <option>ZAR</option>  {/* South African Rand */}
+              <option>SGD</option>  {/* Singapore Dollar */}
             </select>
+
+
             <span className="to-text">To</span>
-            <select
-              value={toCurrency}
-              onChange={(e) => setToCurrency(e.target.value)}
+
+            <select value={toCurrency} onChange={(e) => setToCurrency(e.target.value)}
               className="select"
             >
               <option>USD</option>
               <option>INR</option>
               <option>EUR</option>
               <option>GBP</option>
+              <option>JPY</option>  
+              <option>AUD</option> 
+              <option>CAD</option>  
+              <option>CHF</option>  
+              <option>CNY</option>  
+              <option>NZD</option>  
+              <option>ZAR</option>  
+              <option>SGD</option>  
             </select>
+            
           </div>
           <h3>
             {rate

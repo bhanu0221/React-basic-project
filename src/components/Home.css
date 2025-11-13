@@ -42,7 +42,7 @@ h3 {
 }
 
 /* ================= TABLET SCREENS ================= */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .full {
     padding: 30px;
     justify-content: center; /* center items on medium screens */

@@ -19,7 +19,7 @@ const Photos = () => {
 
   return ( 
     <div>
-    <h2 className="title">Some Random pictures.</h2>
+    <h2 className="title">Some Random pictures From slingacademy.com APIs</h2>
         <div className="main">
         {data.map(function(photo,idx){
             return <div key={idx} className='imges'>
