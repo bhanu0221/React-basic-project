@@ -6,8 +6,8 @@ function CurrencyConverter() {
 
 
   const [amount, setAmount] = useState(1);
-  const [fromCurrency, setFromCurrency] = useState("USD");
-  const [toCurrency, setToCurrency] = useState("INR");
+  const [fromCurrency, setFromCurrency] = useState("INR");
+  const [toCurrency, setToCurrency] = useState("USD");
   const [rate, setRate] = useState(null);
   const [result, setResult] = useState(null);
 
@@ -51,18 +51,15 @@ function CurrencyConverter() {
             <select value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)}
               className="select"
             >
-              <option>USD</option>
               <option>INR</option>
+              <option>USD</option>
               <option>EUR</option>
               <option>GBP</option>  
               <option>JPY</option>  {/* Japanese Yen */}
               <option>AUD</option>  {/* Australian Dollar */}
               <option>CAD</option>  {/* Canadian Dollar */}
-              <option>CHF</option>  {/* Swiss Franc */}
               <option>CNY</option>  {/* Chinese Yuan */}
-              <option>NZD</option>  {/* New Zealand Dollar */}
-              <option>ZAR</option>  {/* South African Rand */}
-              <option>SGD</option>  {/* Singapore Dollar */}
+
             </select>
 
 
@@ -78,18 +75,15 @@ function CurrencyConverter() {
               <option>JPY</option>  
               <option>AUD</option> 
               <option>CAD</option>  
-              <option>CHF</option>  
               <option>CNY</option>  
-              <option>NZD</option>  
-              <option>ZAR</option>  
-              <option>SGD</option>  
+
             </select>
             
           </div>
           <h3>
             {rate
               ? `${amount} ${fromCurrency} = ${result} ${toCurrency}`
-              : "Unable to fetch rate. Try again or switch to another "}
+              : "Unable to fetch rate or you have choose the same currency in both. Try again or switch to another "}
           </h3>
         </div>
 
